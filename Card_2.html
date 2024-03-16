@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+            min-height: 1000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0093E9;
+            background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+        }
+        .card {
+            width: 360px;
+            height: 580px;
+            background-color: aliceblue;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        .card img {
+            height: 150px;
+            width: 100%; /* Adjusted for responsiveness */
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .card h2 {
+            font-weight: bold;
+            font-size: 1.9rem;
+        }
+        .textbox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 10px;
+            text-align: center;
+        }
+        .button {
+            font-size: 1.1rem;
+            background-color: #ebd406;
+            font-weight: bold;
+            height: 50px;
+            width: 280px;
+            margin: 20px;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        }
+        .cancilButton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 140px;
+            height: 40px;
+            background-color: rgb(99, 17, 6);
+            color: aliceblue;
+            border-radius: 10px;
+        }
+        .cancilButton a {
+            color: aliceblue;
+            font-size: 1.02rem;
+            text-decoration: none;
+          
+            
+        }
+        .cancilButton{
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+        }
+        .amountbox {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 300px;
+            height: 70px;
+            background-color: #0093E9;
+            border-radius: 10px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .leftbox {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 14px;
+        }
+        .rightbox a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        .imgbox img {
+            height: 1.5rem;
+            width: 1.5rem;
+            margin: 4px;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media only screen and (max-width: 768px) {
+            .card {
+                width: 90%; /* Makes the card width more responsive */
+                height: auto; /* Adjust height automatically based on content */
+            }
+            .button, .amountbox {
+                width: 80%; /* Adjust button and amount box width */
+            }
+        }
+        
+        @media only screen and (max-width: 480px) {
+            .card h2 {
+                font-size: 1.5rem; /* Smaller font size for smaller devices */
+            }
+            .button {
+                width: 90%; /* More width adjustment for smaller screens */
+            }
+            .textbox p, .minright h4, .minright h3 {
+                font-size: 0.9rem; /* Adjust text size for readability */
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="card">
+            <img src="im2.jpg">
+            <div class="textbox">
+                <h2>Order Summary</h2>
+                <p>Scan the QR Code to send or receive the money from the customers. We'll be thankful of you
+                    Scan the QR Code to send or receive the money from the customers. We'll be thankful of you... 
+                </p>
+            </div>
+            <div class="amountbox">
+                <div class="leftbox">
+                    <div class="imgbox">
+                        <img src="img3Ring.jpg" >
+                    </div>
+                    <div class="minright">
+                        <h4>Annual Plan</h4>
+                        <h3>$99.9/year</h3>
+                    </div>
+                </div>
+                <div class="rightbox">
+                    <a href="#" >Change</a>
+                </div>
+            </div>
+            <button class="button">
+                Click To Pay
+            </button>
+            <div class="cancilButton">
+                <a href="" > Cancel Order</a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
+
+<!-- Theses are the changes are made  -->
+
+
+
+<!-- /* Media Queries for Responsiveness */
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 90%; /* Makes the card width more responsive */
+        height: auto; /* Adjust height automatically based on content */
+    }
+    .button, .amountbox {
+        width: 80%; /* Adjust button and amount box width */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .card h2 {
+        font-size: 1.5rem; /* Smaller font size for smaller devices */
+    }
+    .button {
+        width: 90%; /* More width adjustment for smaller screens */
+    }
+    .textbox p, .minright h4, .minright h3 {
+        font-size: 0.9rem; /* Adjust text size for readability */
+    }
+}
+ -->
+
+
+
+
+
+
+
+
+<!-- *****************  My Code ******************* -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            min-height: 1000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0093E9;
+            background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+            box-sizing: border-box;
+
+        }
+        .card{
+            box-sizing: border-box;
+            width: 360px;
+            height: 580px;
+            background-color: aliceblue;
+            border-radius: 15px;
+            display:flex ;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            /* padding: 10px; */
+        }
+        .card img{
+            height: 150px;
+            width: 361px;
+            border-top-left-radius: 15px ;
+            border-top-right-radius: 15px;
+
+        }
+        .card h2{
+            font-weight: bold;
+            font-size: 1.9rem;
+        }
+        /* .card p{
+            font-size: 1.01rem;
+            font-weight: bold;
+        } */
+        .textbox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 10px;
+            text-align: center;
+        }
+        
+
+        
+        .button{
+            font-size: 1.1rem;
+            background-color: #ebd406;
+            font-weight: bold;
+            height: 60px;
+            width: 300px;
+            margin: 5px;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        }
+
+        .cancilButton{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 140px;
+            height: 40px;
+            background-color: rgb(99, 17, 6);
+            color: aliceblue;
+
+        }
+        .cancilButton a{
+            color: aliceblue;
+            /* font-weight: bold; */
+            font-size: 1.02rem;
+            text-decoration:none;
+            border-radius: 20px;
+        }
+        .cancilButton{
+            border-radius: 10px;
+
+        }
+        
+        .amountbox{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 300px;
+            height: 70px;
+            background-color: #0093E9;
+            border-radius: 10px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .leftbox{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* width: fit-content; */
+            gap: 14px;
+        }
+        .rightbox{
+            color: aliceblue;
+
+        }
+
+        .rightbox a{
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 1.2rem;
+            
+        }
+        .imgbox img{
+            height:1.5rem;
+            width:1.5rem ;
+            margin: 4px;
+        }
+
+       
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="card">
+
+            <img src="im2.jpg">
+
+            <div class="textbox">
+            
+                <h2>Order Summary</h2>
+      
+                <p>Scan the QR Code to send or recive the money from the cutomers . We'll be thankful of you
+                    Scan the QR Code to send or recive the money from the cutomers. We'll be thankful of you... 
+                </p>
+            </div>
+
+            <div class="amountbox">
+
+                <div class="leftbox">
+
+                    <div class="imgbox">
+                        <img src="img3Ring.jpg" >
+
+                    </div>
+
+                    <div class="minright">
+                        <h4>Annual Plan</h4>
+                        <h3>$99.9/year</h3>
+
+                    </div>
+
+                </div>
+
+                <div class="rightbox">
+
+                    <a href="#" >Change</a>
+
+                </div>
+
+            </div>
+            
+            <button class="button">
+
+                Click To Pay
+
+            </button>
+
+            <div class="cancilButton">
+
+                <a href="" > Cancil Order</a>
+
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html> -->
